@@ -1,0 +1,80 @@
+    1  apt-get update
+    2  apt-get install lamp-server^
+    3  systemctl restart apache2
+    4  nano /var/www/html/phpinfo.php
+    5  apt-get update
+    6  apt-get install phpmyadmin
+    7  systemctl restart apache2
+    8  apt-get update
+    9  apt-get upgrade
+   10  apt-get dist-upgrade
+   11  nano /etc/apache2/apache2.conf 
+   12  systemctl restart apache2
+   13  exit
+   14  apt-get install -y php7.2
+   15  apt-get install python-software-properties
+   16  add-apt-repository ppa:ondrej/php
+   17  apt-get update
+   18  apt-get install -y php7.2
+   19  systemctl restart apache2
+   20  php -v
+   21  exit
+   22  sudo add-apt-repository ppa:webupd8team/sublime-text-2
+   23  sudo apt-get update
+   24  apt-get update
+   25  apt-get upgrade
+   26  apt-get dist-upgrade
+   27  nano /var/www/html/index.html
+   28  nano /var/www/html/test.html
+   29  systemctl restart apache2
+   30  a2enmod proxy_fcgi setenvif
+   31  a2enconf php7.2-fpm
+   32  systemctl restart apache2
+   33  service apache2 reload
+   34  apachectl -V
+   35  service apache2 reload
+   36  a2dismod php7.0
+   37  service apache2 reload
+   38  exit
+   39  ls
+   40  cd /var/www/
+   41  ls
+   42  cd html/
+   43  ls
+   44  ./index.html
+   45  apt-get install cockpit
+   46  systemctl enable --now cockpit.socket
+   47  firewall-cmd --add-service=cockpit
+   48  nano /var/www/html/test.html 
+   49  mv /var/www/html/test.html /var/www/html/test.php
+   50  mariadb
+   51  mysql
+   52  mysql -root
+   53  mysql -root -pass
+   54  mysql -root -password
+   55  mariadb
+   56  mkdir /var/www/html/programacion1
+   57  cd /var/www/html/programacion1/
+   58  ls
+   59  cd /var/www/html/programacion1/
+   60  nano test.php
+   61  apt-get install git
+   62  ls
+   63  cd Escritorio/
+   64  mkdir holagit
+   65  ls
+   66  cd holagit/
+   67  git init
+   68  ls -a
+   69  echo "hola" > hola.txt
+   70  ls
+   71  git remote add origin https://github.com/DanielBalda/holagit.git
+   72  git add hola.txt
+   73  git commit -m "Mi primer commit"
+   74  git config user.name DanielBalda
+   75  git config user.email danielbalda@gmail.com
+   76  git config user.email danielbalda93@gmail.com
+   77  git commit -m "Mi primer commit"
+   78  git push
+   79  git push -u origin master
+   80  history > comandos.txt
